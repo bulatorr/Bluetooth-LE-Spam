@@ -30,7 +30,7 @@ class AdvertisementLoopService (bluetoothLeAdvertisementService:BluetoothLeAdver
     fun setIntervalSeconds(interval:Int){
         timer.cancel()
 
-        countdownInterval = interval * 1000
+        countdownInterval = interval * 100
         millisInFuture = countdownInterval * 10
 
         timer = getTimer()
